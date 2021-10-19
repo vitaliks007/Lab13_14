@@ -1,14 +1,21 @@
 package com.mireahw.lab13_14;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
+import javafx.scene.canvas.Canvas;
 
 public class Controller {
-    @FXML
-    private Label welcomeText;
+    private boolean init = false;
+    private char turn = 0;
 
     @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
+    private Canvas canvas;
+
+    private Drawer drawer = new Drawer(canvas);
+
+    @FXML
+    public void canvasClicked() {
+        if (!init) {
+
+        }
     }
 }
